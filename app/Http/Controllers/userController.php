@@ -5,17 +5,27 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class user extends Controller
+class userController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return User::all();
+        //return user::all();
+        //return User::where('gender', 'male')->get();
         //male 
+
+        //return User::where('gender', 'female')->get();
         //female
+
+        return User::where('id')->get();
         //id
+        //5 only
+        //5 ony with blog
+        //id 7
+        //id with odd
+
     }
 
     /**

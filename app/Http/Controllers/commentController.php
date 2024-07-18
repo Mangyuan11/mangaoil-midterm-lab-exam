@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\post;
+use App\Models\comment;
 use Illuminate\Http\Request;
 
-class post extends Controller
+class commentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class post extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(post $post)
+    public function show(comment $comment)
     {
         //
     }
@@ -42,7 +42,7 @@ class post extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(post $post)
+    public function edit(comment $comment)
     {
         //
     }
@@ -50,7 +50,7 @@ class post extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, post $post)
+    public function update(Request $request, comment $comment)
     {
         //
     }
@@ -58,7 +58,7 @@ class post extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(post $post)
+    public function destroy(comment $comment)
     {
         //
     }
