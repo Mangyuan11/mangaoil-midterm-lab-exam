@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\postController;
-use App\Http\Controller\commentController;
-use App\Http\Controller\userConntroller;
+use App\Http\Controllers\postController;
+use App\Http\Controllers\commentController;
+use App\Http\Controllers\userConntroller;
 
 
 Route::get('/', function () {

@@ -5,14 +5,19 @@ namespace App\Http\Controllers;
 use App\Models\post;
 use Illuminate\Http\Request;
 
-class postCon extends Controller
+class postController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        //all
+        //return post::all();
+
+        //blogs
+        //draft
+        return post::orderBy('published_at',"desc")->get();
     }
 
     /**

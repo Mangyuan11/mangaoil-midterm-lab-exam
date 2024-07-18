@@ -21,7 +21,11 @@ class userController extends Controller
 
         //return User::where('id')->get();
         //id
+
+        //return User::limit(5)->get();
         //5 only
+
+
         //5 ony with blog
         //id 7
         //id with odd
