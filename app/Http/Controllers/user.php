@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\user;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class user extends Controller
@@ -12,7 +12,10 @@ class user extends Controller
      */
     public function index()
     {
-        //
+        return User::all();
+        //male 
+        //female
+        //id
     }
 
     /**
@@ -61,5 +64,5 @@ class user extends Controller
     public function destroy(user $user)
     {
         //
-    }
+    }    
 }
