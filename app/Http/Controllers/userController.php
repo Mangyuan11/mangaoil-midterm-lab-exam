@@ -19,7 +19,7 @@ class userController extends Controller
         //return User::where('gender', 'female')->get();
         //female
 
-        return User::where('id')->get();
+        //return User::where('id')->get();
         //id
         //5 only
         //5 ony with blog
