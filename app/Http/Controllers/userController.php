@@ -12,7 +12,7 @@ class userController extends Controller
      */
     public function index()
     {
-        //return user::all();
+        return user::all();
         //return User::where('gender', 'male')->get();
         //male 
 

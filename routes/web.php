@@ -10,5 +10,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('post', postController::class);
-Route::resource('comment', commentController::class);
+Route::resource('post_comments', commentController::class);
 Route::resource('User', userController::class);

@@ -13,14 +13,14 @@ class postController extends Controller
     public function index()
     {
         //all
-        //return post::all();
+        return post::all();
 
         //blogs
         //draft
         //return post::orderBy('published_at',"desc")->get();
         //return post::whereIn('id',[23])->get();
         //14
-        return post::where('published_at', 'like', '%-02-%')->get();
+        //return post::where('published_at', 'like', '%-02-%')->get();
 
     }
 

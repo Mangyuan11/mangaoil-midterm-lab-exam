@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\comment;
+use App\Models\post_comments;
 use Illuminate\Http\Request;
 
 class commentController extends Controller
@@ -12,7 +12,7 @@ class commentController extends Controller
      */
     public function index()
     {
-        //
+        return post_comments::all();
     }
 
     /**
