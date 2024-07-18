@@ -17,7 +17,8 @@ class postController extends Controller
 
         //blogs
         //draft
-        return post::orderBy('published_at',"desc")->get();
+        //return post::orderBy('published_at',"desc")->get();
+        return post::whereIn('id',[23])->get();
     }
 
     /**
